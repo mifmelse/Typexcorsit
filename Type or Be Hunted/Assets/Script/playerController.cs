@@ -7,6 +7,11 @@ public class playerController : MonoBehaviour
 {
     private Animator animator;
     private NavMeshAgent navMeshAgent;
+    public CharacterController TP;
+    Vector3 moveDirection;
+    public float PS;
+    public float JS;
+    public float Gravity;
 
     private bool running = false;
 
@@ -40,5 +45,48 @@ public class playerController : MonoBehaviour
         }
 
         animator.SetBool("run", running);
+
+        
+
+        if(TP.isGrounded)
+        {
+            moveDirection = new Vector3(Input.GetAxis("Vertical"),0,Input.GetAxis("Horizontal"));
+            moveDirection *= PS;
+            if(Input.GetButton("Jump") ) 
+            {
+                moveDirection.y=JS;
+            }
+        }
+
+        moveDirection.y -= Gravity*Time.deltaTime;
+        TP.Move(moveDirection*Time.deltaTime);
+        
+        
+        if (Input.GetKey("up") )
+        {
+            TP.transform.rotation = Quaternion.Euler(0,-280,0);
+            running = true;
+        }
+        else if (Input.GetKey("down"))
+        {
+            TP.transform.rotation = Quaternion.Euler(0,-90,0);
+            running = true;
+        }
+        else if (Input.GetKey("left"))
+        {
+            TP.transform.rotation = Quaternion.Euler(0,-10,0);
+            running = true;
+        }
+        else if (Input.GetKey("right"))
+        {
+            TP.transform.rotation = Quaternion.Euler(0,-180,0);
+            running = true;
+        }
+        else
+        {
+            running = false;
+        }
+        animator.SetBool("run", running);
+        
     }
 }
