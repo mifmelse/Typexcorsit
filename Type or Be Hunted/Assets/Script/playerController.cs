@@ -7,13 +7,14 @@ public class playerController : MonoBehaviour
 {
     private Animator animator;
     private NavMeshAgent navMeshAgent;
-    public CharacterController TP;
+    
+    private bool running = false;
+
+    /*public CharacterController TP;
     Vector3 moveDirection;
     public float PS;
     public float JS;
-    public float Gravity;
-
-    private bool running = false;
+    public float Gravity;*/
 
     private void Start()
     {
@@ -46,9 +47,7 @@ public class playerController : MonoBehaviour
 
         animator.SetBool("run", running);
 
-        
-
-        if(TP.isGrounded)
+        /*if(TP.isGrounded)
         {
             moveDirection = new Vector3(Input.GetAxis("Vertical"),0,Input.GetAxis("Horizontal"));
             moveDirection *= PS;
@@ -86,7 +85,7 @@ public class playerController : MonoBehaviour
         {
             running = false;
         }
-        animator.SetBool("run", running);
+        animator.SetBool("run", running);*/
         
     }
 }
