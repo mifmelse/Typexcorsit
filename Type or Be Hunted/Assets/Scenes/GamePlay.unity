@@ -121,6 +121,81 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 642b16e17df9c3a449f35cb8af39d062, type: 2}
+--- !u!1 &8092614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8092616}
+  - component: {fileID: 8092615}
+  - component: {fileID: 8092617}
+  - component: {fileID: 8092618}
+  m_Layer: 0
+  m_Name: word
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &8092615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8092614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d482718ed57212468bc9c94400ed139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Words: []
+  wordSpawner: {fileID: 0}
+--- !u!4 &8092616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8092614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -382.5497, y: 21.364267, z: -42.098442}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8092617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8092614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73491fd65c75244d836417ed2ebe3c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordManager: {fileID: 8092615}
+--- !u!114 &8092618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8092614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb4d4a1d1086fa44a158a14a0f9b770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordPrefab: {fileID: 8584382659022568952, guid: 97129b60754fddc4faab0a430ec4b7b4,
+    type: 3}
+  wordCanvas: {fileID: 1616114186}
 --- !u!1 &311923056 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7614953336735049097, guid: 2fee729f9735cc54f8519acc09176b39,
@@ -1054,6 +1129,9 @@ GameObject:
   - component: {fileID: 1310869498}
   - component: {fileID: 1310869497}
   - component: {fileID: 1310869499}
+  - component: {fileID: 1310869502}
+  - component: {fileID: 1310869501}
+  - component: {fileID: 1310869500}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1107,6 +1185,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemy:
   - {fileID: 311923056}
+--- !u!114 &1310869500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310869496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb4d4a1d1086fa44a158a14a0f9b770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordPrefab: {fileID: 8584382659022568952, guid: 97129b60754fddc4faab0a430ec4b7b4,
+    type: 3}
+  wordCanvas: {fileID: 1616114186}
+--- !u!114 &1310869501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310869496}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73491fd65c75244d836417ed2ebe3c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordManager: {fileID: 1310869502}
+--- !u!114 &1310869502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310869496}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d482718ed57212468bc9c94400ed139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Words: []
+  wordSpawner: {fileID: 1310869500}
 --- !u!1 &1366767635
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1463,11 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1504295591}
+    - target: {fileID: 7614953336453182600, guid: 2fee729f9735cc54f8519acc09176b39,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7614953336735049088, guid: 2fee729f9735cc54f8519acc09176b39,
         type: 3}
       propertyPath: Player
@@ -1416,15 +1541,21 @@ PrefabInstance:
     - target: {fileID: 7614953337512790606, guid: 2fee729f9735cc54f8519acc09176b39,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7614953337512790606, guid: 2fee729f9735cc54f8519acc09176b39,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fee729f9735cc54f8519acc09176b39, type: 3}
+--- !u!224 &1616114186 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7614953336389714955, guid: 2fee729f9735cc54f8519acc09176b39,
+    type: 3}
+  m_PrefabInstance: {fileID: 1608386333}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1661588643
 GameObject:
   m_ObjectHideFlags: 0

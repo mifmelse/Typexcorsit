@@ -6,7 +6,7 @@ public class enemymovement : MonoBehaviour
 {
     [Header("Main Setting")]
     public Animator anim;
-    public float lookRadius = 50f;
+    public float lookRadius = 20f;
     public UnityEngine.AI.NavMeshAgent enemy;
     public Transform Player;
     // Start is called before the first frame update
