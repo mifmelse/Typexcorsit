@@ -5,6 +5,7 @@ using UnityEngine;
 public class spawner : MonoBehaviour
 {
     public GameObject[] Enemy;
+
     private int zpos;
     private int xpos;
     private int EnemyCount;
@@ -16,12 +17,13 @@ public class spawner : MonoBehaviour
 
     IEnumerator SpawnEnemy()
     {
-        while (EnemyCount < 10)
+        while (EnemyCount < 5)
         {
             xpos = Random.Range(-493, -227);
             zpos = Random.Range(-93, 17);
             int rand = Random.Range(0,Enemy.Length);
             Instantiate(Enemy[rand], new Vector3(xpos, 16, zpos), Quaternion.identity);
+            
             yield return new WaitForSeconds(2);
             EnemyCount += 1;
         }

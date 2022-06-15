@@ -5,30 +5,33 @@ using UnityEngine;
 public class WordManager : MonoBehaviour
 {
     public List<Word> words;
+    public GameObject tuyul;
     private bool hasActiveWord;
     private Word activeWord;
     public WordSpawner wordSpawner;
+    private int length;
 
-    private void Start()
+    private void Update()
     {
         AddWord();
-        /*AddWord();
-        AddWord();
-        AddWord();
-        AddWord();
-        AddWord();
-        AddWord();
-        AddWord();
-        AddWord();
-        AddWord();*/
+        if (words.Count == 0)
+        {
+            Destroy(this.tuyul);
+        }
     }
+
 
     public void AddWord()
     {
-        Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
-        Debug.Log(word.word);
+        if (length < 1 ) 
+        {
+            Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
+            Debug.Log(word.word);
 
-        words.Add(word);
+            words.Add(word);
+            length+=1;
+        }
+        
     }
 
     public void TypeLetter (char letter)
