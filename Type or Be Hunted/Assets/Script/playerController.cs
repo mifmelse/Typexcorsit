@@ -39,10 +39,12 @@ public class playerController : MonoBehaviour
         if(navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
             running = false;
+            walksound.instance.StopWalk();
         }
         else
         {
             running = true;
+            walksound.instance.Walk();
         }
 
         animator.SetBool("run", running);

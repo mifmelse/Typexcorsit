@@ -17,6 +17,7 @@ public class WordManager : MonoBehaviour
         if (words.Count == 0)
         {
             Destroy(this.tuyul);
+            SoundManager.instance.TuyulDead();
         }
     }
 

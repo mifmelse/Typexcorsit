@@ -23,6 +23,7 @@ public class spawner : MonoBehaviour
             zpos = Random.Range(-93, 17);
             int rand = Random.Range(0,Enemy.Length);
             Instantiate(Enemy[rand], new Vector3(xpos, 16, zpos), Quaternion.identity);
+            SoundManager.instance.TuyulSpawn();
             
             yield return new WaitForSeconds(2);
             EnemyCount += 1;

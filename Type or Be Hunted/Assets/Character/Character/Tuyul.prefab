@@ -5128,7 +5128,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 36
   m_CollisionDetection: 0
 --- !u!195 &8694780463501006172
 NavMeshAgent:
@@ -5167,7 +5167,7 @@ MonoBehaviour:
   anim: {fileID: 8694780462910757257}
   lookRadius: 50
   enemy: {fileID: 8694780463501006172}
-  Player: {fileID: 7131688595287469698, guid: 80309cce65d4bf5409a3d6b7ccb354a7, type: 3}
+  Player: {fileID: 6136884931986166195, guid: 80309cce65d4bf5409a3d6b7ccb354a7, type: 3}
 --- !u!1 &8694780463569450200
 GameObject:
   m_ObjectHideFlags: 0
