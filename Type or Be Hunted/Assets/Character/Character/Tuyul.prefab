@@ -5032,7 +5032,7 @@ GameObject:
   - component: {fileID: 8694780463501006162}
   m_Layer: 0
   m_Name: Tuyul
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5167,7 +5167,6 @@ MonoBehaviour:
   anim: {fileID: 8694780462910757257}
   lookRadius: 50
   enemy: {fileID: 8694780463501006172}
-  Player: {fileID: 6136884931986166195, guid: 80309cce65d4bf5409a3d6b7ccb354a7, type: 3}
 --- !u!1 &8694780463569450200
 GameObject:
   m_ObjectHideFlags: 0
