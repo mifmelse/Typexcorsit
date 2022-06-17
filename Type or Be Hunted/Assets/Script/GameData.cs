@@ -6,11 +6,12 @@ public class GameData : MonoBehaviour
 {
     public static GameData instance;
     public float timerr;
-    public GameObject[] gameObjects;
+    public GameObject[] enemyy;
+    public GameObject winCondition;
 
     private void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
             Destroy(gameObject);
         }
@@ -22,12 +23,15 @@ public class GameData : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-
     void Update()
     {
-        gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
-        Debug.Log("Game Object Ada =" + gameObjects.Length);
+        enemyy = GameObject.FindGameObjectsWithTag("Enemy");
+        Debug.Log("musuh ada: " + enemyy.Length);
 
+        if(enemyy.Length == 0)
+        {
+            winCondition.SetActive(true);
+            // script seluruh game jadi freeze atau terhenti
+        }
     }
-
 }

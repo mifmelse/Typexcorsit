@@ -28,13 +28,7 @@ public class SoundManager : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine("Playsound");
-    }
-
-    IEnumerator Playsound()
-    {
-        yield return new WaitForSeconds(33);
-        audio.Play();
+        
     }
 
     public void TuyulSpawn()

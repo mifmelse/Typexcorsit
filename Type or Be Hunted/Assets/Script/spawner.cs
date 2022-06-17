@@ -16,18 +16,12 @@ public class spawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("Play");
-    }
-
-    IEnumerator Play()
-    {
-        yield return new WaitForSeconds(35);
         StartCoroutine("SpawnEnemy");
     }
 
     IEnumerator SpawnEnemy()
     {
-        while (EnemyCount < 7)
+        while (EnemyCount < 3)
         {
             xpos1 = Random.Range(-493, -227);
             zpos1 = Random.Range(-93, 17);
@@ -37,8 +31,8 @@ public class spawner : MonoBehaviour
             zpos3 = Random.Range(208, 472);
             int rand = Random.Range(0,Enemy.Length);
             Instantiate(Enemy[rand], new Vector3(xpos1, 16, zpos1), Quaternion.identity);
-            Instantiate(Enemy[rand], new Vector3(xpos2, 16, zpos2), Quaternion.identity);
-            Instantiate(Enemy[rand], new Vector3(xpos3, 16, zpos3), Quaternion.identity);
+            /*Instantiate(Enemy[rand], new Vector3(xpos2, 16, zpos2), Quaternion.identity);
+            Instantiate(Enemy[rand], new Vector3(xpos3, 16, zpos3), Quaternion.identity);*/
             SoundManager.instance.TuyulSpawn();
             yield return new WaitForSeconds(2);
             

@@ -6,14 +6,15 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     [Header("Game Setting")]
-    public int maxHealth = 100;
-    public int currentHealth;
     public float timer;
     public bool isOver;
+    public int maxHealth = 100;
+    public int currentHealth;
 
     [Header("UI")]
     public TextMeshProUGUI timerTxt;
     public HealthBar healthBar;
+    public GameObject winCondition;
 
     void Start()
     {
@@ -42,13 +43,18 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
             TakeDamage(20);
+        }
 
-            healthBar.SetHealth(currentHealth);
+        if (currentHealth == 0)
+        {
+            winCondition.SetActive(true);
+            isOver = true;
         }
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
     }
 }

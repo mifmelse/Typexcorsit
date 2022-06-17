@@ -23,4 +23,5 @@ public class HealthBar : MonoBehaviour
 
         darah.color = gradient.Evaluate(slider.normalizedValue);
     }
+
 }

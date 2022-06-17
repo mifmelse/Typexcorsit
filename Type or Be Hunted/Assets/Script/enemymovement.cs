@@ -53,4 +53,12 @@ public class enemymovement : MonoBehaviour
             anim.SetBool("Attack",false);
         }
     }
+
+    /*private void OnTriggerEnter(Collider hit)
+    {
+        if (hit.tag == "Player")
+        {
+            hit.GetComponent<HealthBar>().TakeDamage(5);
+        }
+    }*/
 }
