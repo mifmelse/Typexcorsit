@@ -6,8 +6,9 @@ public class GameData : MonoBehaviour
 {
     public static GameData instance;
     public float timerr;
+    public int Score = 0;
     public GameObject[] enemyy;
-    public GameObject winCondition;
+
 
     private void Awake()
     {
@@ -26,12 +27,5 @@ public class GameData : MonoBehaviour
     void Update()
     {
         enemyy = GameObject.FindGameObjectsWithTag("Enemy");
-        Debug.Log("musuh ada: " + enemyy.Length);
-
-        if(enemyy.Length == 0)
-        {
-            winCondition.SetActive(true);
-            // script seluruh game jadi freeze atau terhenti
-        }
     }
 }

@@ -10,11 +10,16 @@ public class GameManager : MonoBehaviour
     public bool isOver;
     public int maxHealth = 100;
     public int currentHealth;
+    
+    
 
     [Header("UI")]
     public TextMeshProUGUI timerTxt;
     public HealthBar healthBar;
     public GameObject winCondition;
+    public GameObject loseCondition;
+    public TextMeshProUGUI scoreTxt;
+    public int score;
 
     void Start()
     {
@@ -23,11 +28,22 @@ public class GameManager : MonoBehaviour
 
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        
     }
 
 
     void Update()
     {
+        
+        Debug.Log("musuh ada: " + GameData.instance.enemyy.Length);
+
+        if(GameData.instance.enemyy.Length == 0)
+        {
+            winCondition.SetActive(true);
+            // script seluruh game jadi freeze atau terhenti
+        }
+        score = GameData.instance.Score;
+        scoreTxt.text = score.ToString();
         if (timer > 0f)
         {
             timer -= Time.deltaTime;

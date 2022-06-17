@@ -16,6 +16,7 @@ public class WordManager : MonoBehaviour
         AddWord();
         if (words.Count == 0)
         {
+            GameData.instance.Score += 100;
             Destroy(this.tuyul);
             SoundManager.instance.TuyulDead();
         }

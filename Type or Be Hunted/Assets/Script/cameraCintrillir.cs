@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class cameraCintrillir : MonoBehaviour
 {
+
+
     public Transform playerTransform;
     private Vector3 _cameraOffset;
 

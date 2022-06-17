@@ -14,6 +14,11 @@ public class LoadSceneClick : MonoBehaviour
         //Melakukan perpindahan antar scene. Catatan: Scene yang dipanggil sudah didaftarkan di Build Setting
         SceneManager.LoadScene("Video");
     }
+    public void Ulang()
+    {
+        //Melakukan perpindahan antar scene. Catatan: Scene yang dipanggil sudah didaftarkan di Build Setting
+        SceneManager.LoadScene("3. GamePlay");
+    }
 
     public void exit()
     {
