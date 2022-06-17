@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class enemymovement : MonoBehaviour
 {
-    [SerializeField]
     [Header("Main Setting")]
     public Animator anim;
-    public float lookRadius = 50f;
+    public float lookRadius = 13f;
     public UnityEngine.AI.NavMeshAgent enemy;
     private GameObject[] gameObjects;
     private GameObject player;

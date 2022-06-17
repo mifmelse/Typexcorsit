@@ -26,6 +26,17 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    void Start()
+    {
+        StartCoroutine("Playsound");
+    }
+
+    IEnumerator Playsound()
+    {
+        yield return new WaitForSeconds(33);
+        audio.Play();
+    }
+
     public void TuyulSpawn()
     {
         audio.PlayOneShot(tuyulspawn);
