@@ -90,4 +90,9 @@ public class playerController : MonoBehaviour
         animator.SetBool("run", running);*/
         
     }
+
+    private void OnTriggerEnter(Collider hit)
+    {
+        
+    }
 }

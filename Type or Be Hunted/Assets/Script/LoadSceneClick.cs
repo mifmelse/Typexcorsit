@@ -18,6 +18,8 @@ public class LoadSceneClick : MonoBehaviour
     {
         //Melakukan perpindahan antar scene. Catatan: Scene yang dipanggil sudah didaftarkan di Build Setting
         SceneManager.LoadScene("3. GamePlay");
+        GameData.instance.Score = 0;
+        
     }
 
     public void exit()
