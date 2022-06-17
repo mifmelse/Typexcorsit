@@ -110,12 +110,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1536
     height: 741
   m_MinSize: {x: 706, y: 492}
   m_MaxSize: {x: 18001, y: 14042}
   vertical: 0
   controlID: 4379
+=======
+    width: 1920
+    height: 947
+  m_MinSize: {x: 706, y: 492}
+  m_MaxSize: {x: 18001, y: 14042}
+  vertical: 0
+  controlID: 60
+>>>>>>> video
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,12 +144,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1214
     height: 741
   m_MinSize: {x: 431, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 1
   controlID: 4380
+=======
+    width: 1367
+    height: 947
+  m_MinSize: {x: 431, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
+  vertical: 1
+  controlID: 61
+>>>>>>> video
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -160,10 +178,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1214
     height: 399
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
+=======
+    width: 1367
+    height: 510
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
+>>>>>>> video
   vertical: 0
   controlID: 4381
 --- !u!114 &8
@@ -209,8 +234,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 370
     y: 0
+<<<<<<< HEAD
     width: 844
     height: 399
+=======
+    width: 958
+    height: 510
+>>>>>>> video
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
@@ -245,7 +275,11 @@ MonoBehaviour:
   m_MinSize: {x: 431, y: 271}
   m_MaxSize: {x: 14001, y: 10021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 4427
+=======
+  controlID: 147
+>>>>>>> video
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -446,9 +480,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 203b0000
       m_LastClickedID: 0
       m_ExpandedIDs: 7cdbffffdce0ffff60e3ffff5af2ffff64fbffffb8370000063f00004e560000
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 66fbfffff4ffffff9e370000ea37000018380000
+>>>>>>> video
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -508,9 +548,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 540.70966, y: 374.84393, z: 0.25769043}
     speed: 2
     m_Value: {x: 540.70966, y: 374.84393, z: 0.25769043}
+=======
+    m_Target: {x: -367.79776, y: 9.324776, z: 8.98819}
+    speed: 2
+    m_Value: {x: -367.79776, y: 9.324776, z: 8.98819}
+>>>>>>> video
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -556,6 +602,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: 0.052475184, y: 0.004493483, z: -0.00023614679, w: 0.99861115}
     speed: 2
     m_Value: {x: -0.052475184, y: -0.0044934833, z: 0.0002361468, w: -0.99861115}
@@ -563,6 +610,15 @@ MonoBehaviour:
     m_Target: 406.07257
     speed: 2
     m_Value: 406.07257
+=======
+    m_Target: {x: -0.104990534, y: 0.86387205, z: -0.20181453, w: -0.44941616}
+    speed: 2
+    m_Value: {x: -0.10499044, y: 0.8638712, z: -0.20181434, w: -0.44941574}
+  m_Size:
+    m_Target: 77.46995
+    speed: 2
+    m_Value: 77.46995
+>>>>>>> video
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -759,20 +815,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scenes
+=======
+    - Assets/Script/Word
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Script/Word
+>>>>>>> video
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\GitHub\Typexcorsit\Type or Be Hunted
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 88380000
     m_LastClickedID: 14472
     m_ExpandedIDs: 000000007438000076380000783800007a38000000ca9a3b
+=======
+    m_SelectedIDs: 624c0000
+    m_LastClickedID: 19554
+    m_ExpandedIDs: 00000000364c0000384c00003a4c00003c4c00003e4c0000404c00004a4c000000ca9a3b
+>>>>>>> video
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -6,6 +6,7 @@ public class GameData : MonoBehaviour
 {
     public static GameData instance;
     public float timerr;
+    public GameObject[] gameObjects;
 
     private void Awake()
     {
@@ -20,4 +21,13 @@ public class GameData : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
+
+
+    void Update()
+    {
+        gameObjects = GameObject.FindGameObjectsWithTag("Enemy");
+        Debug.Log("Game Object Ada =" + gameObjects.Length);
+
+    }
+
 }
