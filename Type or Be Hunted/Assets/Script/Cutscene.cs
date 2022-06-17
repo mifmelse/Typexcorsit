@@ -14,12 +14,12 @@ public class Cutscene : MonoBehaviour
     IEnumerator DelayPlay()
     {
         yield return new WaitForSeconds(33);
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("3. GamePlay");
     }
 
     public void SkipBtn()
     {
-        SceneManager.LoadScene("GamePlay");
+        SceneManager.LoadScene("3. GamePlay");
     }
 
 

@@ -12,7 +12,7 @@ public class LoadSceneClick : MonoBehaviour
     public void LoadScene()
     {
         //Melakukan perpindahan antar scene. Catatan: Scene yang dipanggil sudah didaftarkan di Build Setting
-        SceneManager.LoadScene(TargetScene);
+        SceneManager.LoadScene("Video");
     }
 
     public void exit()
