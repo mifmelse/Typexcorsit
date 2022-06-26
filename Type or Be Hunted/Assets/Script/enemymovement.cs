@@ -54,6 +54,23 @@ public class enemymovement : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
+
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Rigidbody rb = collision.collider.GetComponent<Rigidbody>();
+        if(collision.gameObject.tag == TagObject){
+            gameManager.TakeDamage(10);
+            SoundManager.instance.Hit();
+            Vector3 direction=player.transform.position - transform.position;
+            direction.y = 0;
+            rb.AddForce(direction.normalized*knockbackStrength, ForceMode.Impulse);
+        }
+    }
+
+=======
+>>>>>>> parent of 79a76f3 (knockback dll)
     /*private void OnTriggerEnter(Collider hit)
     {
         if (hit.tag == "Player")

@@ -115,7 +115,11 @@ MonoBehaviour:
   m_MinSize: {x: 880, y: 342}
   m_MaxSize: {x: 16005, y: 8042}
   vertical: 0
+<<<<<<< HEAD
+  controlID: 82
+=======
   controlID: 141
+>>>>>>> parent of 79a76f3 (knockback dll)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,13 +188,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
+    width: 402
+    height: 581
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 15}
+=======
     width: 322
     height: 455
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
+>>>>>>> parent of 79a76f3 (knockback dll)
   m_Panes:
-  - {fileID: 14}
+  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &9
@@ -210,14 +222,22 @@ MonoBehaviour:
     serializedVersion: 2
     x: 322
     y: 0
+<<<<<<< HEAD
+    width: 410
+    height: 581
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 16}
+=======
     width: 328
     height: 455
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
+>>>>>>> parent of 79a76f3 (knockback dll)
   m_Panes:
-  - {fileID: 15}
   - {fileID: 16}
+  - {fileID: 17}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &10
@@ -237,13 +257,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 650
     y: 0
+<<<<<<< HEAD
+    width: 554
+    height: 581
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
+=======
     width: 443
     height: 455
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
+>>>>>>> parent of 79a76f3 (knockback dll)
   m_Panes:
-  - {fileID: 13}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &11
@@ -262,17 +290,30 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
+    y: 581
+    width: 1366
+    height: 366
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+=======
     y: 455
     width: 1093
     height: 286
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> parent of 79a76f3 (knockback dll)
   m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 17}
   - {fileID: 18}
+<<<<<<< HEAD
+  - {fileID: 19}
+  m_Selected: 0
+  m_LastSelected: 1
+=======
   m_Selected: 1
   m_LastSelected: 0
+>>>>>>> parent of 79a76f3 (knockback dll)
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -283,23 +324,58 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 1093
     y: 0
+<<<<<<< HEAD
+    width: 554
+    height: 947
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
+=======
     width: 443
     height: 741
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
+>>>>>>> parent of 79a76f3 (knockback dll)
   m_Panes:
-  - {fileID: 19}
+  - {fileID: 20}
+  - {fileID: 13}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12141, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 360}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Navigation
+    m_Image: {fileID: 1087843850482249999, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1366
+    y: 73
+    width: 553
+    height: 926
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -360,7 +436,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -391,7 +467,7 @@ MonoBehaviour:
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -420,9 +496,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+      m_SelectedIDs: 845c0000
+      m_LastClickedID: 23684
+      m_ExpandedIDs: a0bfffff645e00008a5e0000945e0000
+=======
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 80eeffff903e0000683f0000b0400000
+>>>>>>> parent of 79a76f3 (knockback dll)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -446,7 +528,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 6bfa2a2608dab4d44b8a7087e6e39f58
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,16 +557,22 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 389584951dd04824388591506d1a5c30
   m_Gizmos: 1
-  m_SceneIsLit: 1
+  m_SceneIsLit: 0
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
+    m_Target: {x: -476.0115, y: 16.897165, z: -14.3583555}
+    speed: 2
+    m_Value: {x: -476.0115, y: 16.897165, z: -14.3583555}
+=======
     m_Target: {x: -443.44983, y: 47.012714, z: -10.986198}
     speed: 2
     m_Value: {x: -443.44983, y: 47.012714, z: -10.986198}
+>>>>>>> parent of 79a76f3 (knockback dll)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -497,7 +585,7 @@ MonoBehaviour:
   m_SceneViewState:
     showFog: 1
     showMaterialUpdate: 0
-    showSkybox: 1
+    showSkybox: 0
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
@@ -530,13 +618,19 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
+    m_Target: {x: 0.10548103, y: -0.5539041, z: 0.07100797, w: 0.82281405}
+    speed: 2
+    m_Value: {x: 0.10548098, y: -0.5539039, z: 0.07100793, w: 0.82281363}
+=======
     m_Target: {x: 0.2040693, y: 0.25504684, z: -0.05516189, w: 0.94353896}
     speed: 2
     m_Value: {x: 0.20406914, y: 0.25504664, z: -0.055161845, w: 0.9435382}
+>>>>>>> parent of 79a76f3 (knockback dll)
   m_Size:
-    m_Target: 10
+    m_Target: 3.895137
     speed: 2
-    m_Value: 10
+    m_Value: 3.895137
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -561,7 +655,7 @@ MonoBehaviour:
   m_SceneVisActive: 1
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -587,7 +681,7 @@ MonoBehaviour:
     width: 973
     height: 501
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -626,20 +720,35 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
+    - Assets/Script/Word
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Script/Word
+=======
     - Assets/Script
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Script
+>>>>>>> parent of 79a76f3 (knockback dll)
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\GitHub\Typexcorsit\Type or Be Hunted
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
+    scrollPos: {x: 0, y: 15}
+    m_SelectedIDs: 984c0000
+    m_LastClickedID: 19608
+    m_ExpandedIDs: 000000006c4c00006e4c0000704c0000724c0000744c0000804c000000ca9a3b
+=======
     scrollPos: {x: 0, y: 27}
     m_SelectedIDs: c4fa0000
     m_LastClickedID: 64196
     m_ExpandedIDs: 0000000050520000525200005452000056520000acfa0000c4fa000000ca9a3b
+>>>>>>> parent of 79a76f3 (knockback dll)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -655,7 +764,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -667,7 +776,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
+    m_ExpandedIDs: 000000006c4c00006e4c0000704c0000724c0000744c0000
+=======
     m_ExpandedIDs: 0000000050520000525200005452000056520000
+>>>>>>> parent of 79a76f3 (knockback dll)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -692,8 +805,13 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+=======
     m_SelectedInstanceIDs: d2400000
     m_LastClickedInstanceID: 16594
+>>>>>>> parent of 79a76f3 (knockback dll)
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
@@ -723,7 +841,7 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
---- !u!114 &18
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -749,7 +867,7 @@ MonoBehaviour:
     width: 1092
     height: 265
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &19
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}

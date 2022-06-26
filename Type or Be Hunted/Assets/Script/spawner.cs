@@ -30,9 +30,15 @@ public class spawner : MonoBehaviour
             xpos3 = Random.Range(-118, -7);
             zpos3 = Random.Range(208, 472);
             int rand = Random.Range(0,Enemy.Length);
+<<<<<<< HEAD
+            Instantiate(Enemy[rand], new Vector3(xpos1, 21, zpos1), Quaternion.identity);
+            Instantiate(Enemy[rand], new Vector3(xpos2, 21, zpos2), Quaternion.identity);
+            Instantiate(Enemy[rand], new Vector3(xpos3, 21, zpos3), Quaternion.identity);
+=======
             Instantiate(Enemy[rand], new Vector3(xpos1, 16, zpos1), Quaternion.identity);
             /*Instantiate(Enemy[rand], new Vector3(xpos2, 16, zpos2), Quaternion.identity);
             Instantiate(Enemy[rand], new Vector3(xpos3, 16, zpos3), Quaternion.identity);*/
+>>>>>>> parent of 79a76f3 (knockback dll)
             SoundManager.instance.TuyulSpawn();
             yield return new WaitForSeconds(2);
             

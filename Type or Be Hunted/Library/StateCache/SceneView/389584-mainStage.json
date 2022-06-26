@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-377.2994384765625,"y":37.95623016357422,"z":-219.7103729248047},"rotation":{"x":-0.003912078682333231,"y":0.9910128712654114,"z":0.029739325866103174,"w":0.1303652971982956},"size":10.0,"orthographic":false}
+=======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":-443.4498291015625,"y":47.01271438598633,"z":-10.986198425292969},"rotation":{"x":0.20406930148601533,"y":0.2550468444824219,"z":-0.055161889642477038,"w":0.9435389637947083},"size":10.0,"orthographic":false}
+>>>>>>> parent of 79a76f3 (knockback dll)

@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class cameraCintrillir : MonoBehaviour
 {
-
-
-    public Transform playerTransform;
+    private GameObject[] wadah;
+    private GameObject player;
     private Vector3 _cameraOffset;
 
     [Range(0.01f, 1.0f)]
@@ -16,18 +15,20 @@ public class cameraCintrillir : MonoBehaviour
 
     void Start()
     {
-        _cameraOffset = transform.position - playerTransform.position;
+        wadah = GameObject.FindGameObjectsWithTag("Player");
+        player = wadah[0];
+        _cameraOffset = transform.position - player.transform.position;
     }
 
     void LateUpdate()
     {
-        Vector3 newPos = playerTransform.position + _cameraOffset;
+        Vector3 newPos = player.transform.position + _cameraOffset;
 
         transform.position = Vector3.Slerp(transform.position, newPos, SmoothFactor);
 
         if (LookAtPlayer)
         {
-            transform.LookAt(playerTransform);
+            transform.LookAt(player.transform);
         }
     }
 }
